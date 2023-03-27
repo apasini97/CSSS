@@ -7,16 +7,8 @@ def get_input_file():
 
     absolute_path = os.path.abspath(__file__)
     dir_name = os.path.dirname(absolute_path)
-    
-
     filename = sg.popup_get_file('', no_window = True, initial_folder = dir_name+"/sounds")
     
     return filename
     
-
-
-f = get_input_file()
-print(f)
-
-
-    
+get_input_file()    
